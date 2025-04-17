@@ -1,0 +1,63 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+.hero {
+    background: linear-gradient(135deg, rgba(0,191,255,0.9) 0%, rgba(0,51,102,0.9) 100%), url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80') no-repeat center center/cover;
+}
+.teacher-card:hover .teacher-img {
+    transform: scale(1.05);
+}
+.testimonial-card {
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.1);
+}
+.course-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+.pricing-card:hover {
+    transform: scale(1.03);
+}
+.gallery-item {
+    transition: all 0.3s ease;
+}
+.gallery-item:hover {
+    transform: scale(1.02);
+    opacity: 0.9;
+}
+.timetable-row:hover {
+    background-color: rgba(0, 191, 255, 0.1);
+}
+.current-class {
+    border-left: 4px solid #00bfff;
+    background-color: rgba(0, 191, 255, 0.05);
+}
+/* Preloader */
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.5s ease;
+}
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #00bfff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
